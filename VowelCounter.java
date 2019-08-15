@@ -27,7 +27,7 @@ public class VowelCounter {
 		int counter = 0;
 		for (int i = 0; i < str.length(); ++i) { // For Length of String
 			for (int j = 0; j < lvowels.length(); ++j) { // For Length of Lowercase Vowels
-				if (str.charAt(i) == lvowels.charAt(j) || str.charAt(i) == Character.toUpperCase(lvowels.charAt(j))) { // If String Character == Lowercase Vowels Character
+				if (str.charAt(i) == lvowels.charAt(j) || str.charAt(i) == uvowels.charAt(j)) { // If String Character == Lowercase Vowels Character
 					if (foundv.length() > 0) { // If Vowels are already found
 						int num = 0;
 						for (int k = 0; k < foundv.length(); ++k) { // For Rotating Through Found Vowels
